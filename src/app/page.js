@@ -45,6 +45,13 @@ export default function Home() {
             liveHref="https://www.tiosbandidos.com/"
             comingSoon
           />
+          <ProjectCard
+            title="The Windowsill Naturalist"
+            hook="A gardening blog built entirely on my own — concept, content, and code — testing whether the same verification-first process holds up for writing, not just software."
+            tags={["Next.js", "Static"]}
+            href="/case-studies/gardening-blog"
+            liveHref="https://gardening-blog-porfolio.vercel.app/"
+          />
         </div>
       </main>
       <Footer />
