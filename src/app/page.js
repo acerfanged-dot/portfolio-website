@@ -35,8 +35,8 @@ export default function Home() {
             title="YRT"
             hook="A personalized peptide platform with real clinical oversight — the first project that proved this whole approach could work at all."
             tags={["Next.js", "Supabase", "Vercel"]}
+            href="/case-studies/yrt"
             liveHref="https://www.theyrt.com/"
-            comingSoon
           />
           <ProjectCard
             title="Tios Bandidos"
