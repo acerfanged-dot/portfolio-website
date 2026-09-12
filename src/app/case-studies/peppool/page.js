@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -30,11 +31,16 @@ export default function PeppoolCaseStudy() {
         </div>
         <p className="mt-2 text-sm text-muted">React · Vite · Supabase · Vercel</p>
 
-        {/* Hero screenshot: a fast, non-technical "this is real" signal before any
-            text. Placeholder path -- drop a real screenshot at this location once
-            captured (blueprint §3c). */}
-        <div className="mt-8 flex aspect-video items-center justify-center rounded-lg border border-dashed border-line bg-black/[.02] text-sm text-muted">
-          [ hero screenshot — homepage or Shop, at 1280px ]
+        {/* Real screenshot, captured directly from the live site (headless Chrome,
+            1280px), not a placeholder or a stock image. */}
+        <div className="mt-8 overflow-hidden rounded-lg border border-line">
+          <Image
+            src="/screenshots/peppool-home.png"
+            alt="PEPPOOL homepage — 'Welcome to the Pool. Better together.' hero"
+            width={1280}
+            height={800}
+            className="w-full"
+          />
         </div>
 
         <section className="mt-12">
@@ -63,9 +69,20 @@ export default function PeppoolCaseStudy() {
             and payments, and a full order lifecycle from checkout through payment
             confirmation to fulfillment.
           </p>
-          <div className="mt-6 flex aspect-video items-center justify-center rounded-lg border border-dashed border-line bg-black/[.02] text-sm text-muted">
-            [ inline screenshot — Set pricing UI, next to the pricing-trigger claim ]
+          <div className="mt-6 overflow-hidden rounded-lg border border-line">
+            <Image
+              src="/screenshots/peppool-shop.png"
+              alt="PEPPOOL's public Shop page, showing the real 61-product catalogue with category chips and search"
+              width={1280}
+              height={900}
+              className="w-full"
+            />
           </div>
+          <p className="mt-2 text-xs text-muted">
+            The public Shop — real catalogue, real prices. The Set-pricing toggle itself
+            only appears once a specific product row is opened; not captured separately
+            here yet.
+          </p>
         </section>
 
         <section className="mt-10">
