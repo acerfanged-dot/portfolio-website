@@ -2,7 +2,7 @@
 // robots.js all read it from here, so changing domains is a single edit rather
 // than three that can silently drift apart -- a wrong value here breaks social
 // previews and search indexing without breaking the build.
-export const SITE_URL = "https://portfolio-website-dusky-gamma-96.vercel.app";
+export const SITE_URL = "https://acerfanged-portfolio.vercel.app";
 
 // Every route on the site. Add new pages here when they're created; nothing
 // discovers them automatically under static export.
