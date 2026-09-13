@@ -136,6 +136,23 @@ export default function HowIWork() {
             for its own sake, but a check that doesn&apos;t depend on anyone — me or an AI —
             remembering correctly next time.
           </p>
+          <p>
+            Three of those tools are public, from three unrelated domains —{" "}
+            <a
+              href="https://github.com/acerfanged-dot/verification-artifacts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              verification-artifacts ↗
+            </a>
+            . Each one documents the defect that checking it turned up, rather than quietly
+            fixing it: a permission bug that came back for six weeks, a forecaster confidently
+            recommending &ldquo;bake nothing&rdquo; for a product selling 200 a day, four silent
+            failure modes in a spreadsheet that looked finished. Every one of them produced
+            output with the right shape and the wrong content — which is the failure I&apos;m
+            actually building against.
+          </p>
 
           <h2 className="pt-4 text-lg font-semibold">
             What I can&apos;t do yet, named as such

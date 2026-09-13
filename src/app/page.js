@@ -22,6 +22,18 @@ export default function Home() {
           </Link>{" "}
           before assuming what &ldquo;directs AI&rdquo; means here — it&apos;s specific, not a hedge.
         </p>
+        <p className="mt-2 max-w-2xl text-sm text-muted">
+          Or skip to the evidence:{" "}
+          <a
+            href="https://github.com/acerfanged-dot/verification-artifacts"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
+          >
+            three tools, three domains
+          </a>
+          , each documenting the silent defect that checking it found.
+        </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           <ProjectCard
