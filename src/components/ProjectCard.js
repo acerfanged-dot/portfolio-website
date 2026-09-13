@@ -19,13 +19,19 @@ function LiveLinkIcon() {
   );
 }
 
+// A card without `href` has no case study yet. It renders as plain text rather
+// than promising one -- the live link is still the point.
 export default function ProjectCard({ title, hook, tags, href, liveHref }) {
   return (
     <div className="rounded-lg border border-line p-5">
       <div className="flex items-start justify-between gap-3">
-        <Link href={href} className="text-base font-semibold hover:text-accent">
-          {title}
-        </Link>
+        {href ? (
+          <Link href={href} className="text-base font-semibold hover:text-accent">
+            {title}
+          </Link>
+        ) : (
+          <span className="text-base font-semibold">{title}</span>
+        )}
         {liveHref ? (
           <a
             href={liveHref}
