@@ -13,14 +13,15 @@ export default function Home() {
           before it ships.
         </p>
         <p className="mt-4 max-w-2xl text-sm text-muted">
-          Read{" "}
+          I don&apos;t write production code by hand — yet. An AI does the building; the
+          deciding, and checking it against the real system, are mine. Read{" "}
           <Link
             href="/how-i-work"
             className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
           >
             how I actually work
           </Link>{" "}
-          before assuming what &ldquo;directs AI&rdquo; means here — it&apos;s specific, not a hedge.
+          before assuming what that means — it&apos;s specific, not a hedge.
         </p>
         <p className="mt-2 max-w-2xl text-sm text-muted">
           Or skip to the evidence:{" "}
@@ -49,13 +50,6 @@ export default function Home() {
             tags={["Next.js", "Supabase", "Vercel"]}
             href="/case-studies/yrt"
             liveHref="https://www.theyrt.com/"
-          />
-          <ProjectCard
-            title="Tios Bandidos"
-            hook="A restaurant ordering platform — proof the approach generalizes past the first business it was built for."
-            tags={["Next.js", "Supabase"]}
-            liveHref="https://www.tiosbandidos.com/"
-            comingSoon
           />
           <ProjectCard
             title="The Windowsill Naturalist"

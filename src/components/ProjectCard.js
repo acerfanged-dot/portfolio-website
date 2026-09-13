@@ -1,8 +1,7 @@
 import Link from "next/link";
 
-// Live-link icon sits directly on the card, not only inside the case study --
-// Hobbyland's own posting says "send us the link," so a skimming reader
-// shouldn't need to open the case study first to find it (blueprint §3b/§3c).
+// Live-link icon sits on the card itself so a skimming reader can reach the
+// running site without opening the case study first.
 function LiveLinkIcon() {
   return (
     <svg
@@ -20,19 +19,13 @@ function LiveLinkIcon() {
   );
 }
 
-export default function ProjectCard({ title, hook, tags, href, liveHref, comingSoon }) {
+export default function ProjectCard({ title, hook, tags, href, liveHref }) {
   return (
     <div className="rounded-lg border border-line p-5">
       <div className="flex items-start justify-between gap-3">
-        {comingSoon ? (
-          <span className="text-base font-semibold text-muted">
-            {title} <span className="font-mono text-xs font-normal">— write-up coming soon</span>
-          </span>
-        ) : (
-          <Link href={href} className="text-base font-semibold hover:text-accent">
-            {title}
-          </Link>
-        )}
+        <Link href={href} className="text-base font-semibold hover:text-accent">
+          {title}
+        </Link>
         {liveHref ? (
           <a
             href={liveHref}
