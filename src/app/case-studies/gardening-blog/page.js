@@ -29,7 +29,7 @@ export default function GardeningBlogCaseStudy() {
             View live site ↗
           </a>
         </div>
-        <p className="mt-2 text-sm text-muted">Next.js · Static · No backend</p>
+        <p className="mt-2 text-sm text-muted">Next.js · Static · No backend · Aug – Sep 2026</p>
 
         <div className="mt-8 overflow-hidden rounded-lg border border-line">
           <Image

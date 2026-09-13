@@ -29,7 +29,7 @@ export default function PeppoolCaseStudy() {
             View live site ↗
           </a>
         </div>
-        <p className="mt-2 text-sm text-muted">React · Vite · Supabase · Vercel</p>
+        <p className="mt-2 text-sm text-muted">React · Vite · Supabase · Vercel · Sep 2026</p>
 
         {/* Real screenshot, captured directly from the live site (headless Chrome,
             1280px), not a placeholder or a stock image. */}

@@ -42,6 +42,7 @@ export default function Home() {
             hook="A live group-buy commerce platform, replacing a Google Sheet with a real, server-verified storefront."
             tags={["React", "Supabase", "Vercel"]}
             href="/case-studies/peppool"
+            dates="Sep 2026"
             liveHref="https://peppool-website.vercel.app/"
           />
           <ProjectCard
@@ -49,6 +50,7 @@ export default function Home() {
             hook="A personalized peptide platform with real clinical oversight — the first project that proved this whole approach could work at all."
             tags={["Next.js", "Supabase", "Vercel"]}
             href="/case-studies/yrt"
+            dates="Jul – Sep 2026"
             liveHref="https://www.theyrt.com/"
           />
           <ProjectCard
@@ -56,6 +58,7 @@ export default function Home() {
             hook="A Fil-Tex-Mex cantina's ordering site, built in three days by reusing the working parts of YRT — the test of whether the approach carried to a second business."
             tags={["Next.js", "Supabase"]}
             href="/case-studies/tios-bandidos"
+            dates="Aug 2026"
             liveHref="https://www.tiosbandidos.com/"
           />
           <ProjectCard
@@ -63,6 +66,7 @@ export default function Home() {
             hook="A gardening blog built entirely on my own — concept, content, and code — testing whether the same verification-first process holds up for writing, not just software."
             tags={["Next.js", "Static"]}
             href="/case-studies/gardening-blog"
+            dates="Aug – Sep 2026"
             liveHref="https://gardening-blog-porfolio.vercel.app/"
           />
         </div>

@@ -29,7 +29,7 @@ export default function TiosBandidosCaseStudy() {
             View live site ↗
           </a>
         </div>
-        <p className="mt-2 text-sm text-muted">Next.js · Supabase · Vercel</p>
+        <p className="mt-2 text-sm text-muted">Next.js · Supabase · Vercel · Aug 2026</p>
 
         <div className="mt-8 overflow-hidden rounded-lg border border-line">
           <Image

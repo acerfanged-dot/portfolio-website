@@ -21,7 +21,7 @@ function LiveLinkIcon() {
 
 // A card without `href` has no case study yet. It renders as plain text rather
 // than promising one -- the live link is still the point.
-export default function ProjectCard({ title, hook, tags, href, liveHref }) {
+export default function ProjectCard({ title, hook, tags, href, liveHref, dates }) {
   return (
     <div className="rounded-lg border border-line p-5">
       <div className="flex items-start justify-between gap-3">
@@ -45,9 +45,9 @@ export default function ProjectCard({ title, hook, tags, href, liveHref }) {
         ) : null}
       </div>
       <p className="mt-2 text-sm text-muted">{hook}</p>
-      {tags?.length ? (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((t) => (
+      {tags?.length || dates ? (
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          {tags?.map((t) => (
             <span
               key={t}
               className="rounded border border-line px-2 py-0.5 font-mono text-xs text-muted"
@@ -55,6 +55,7 @@ export default function ProjectCard({ title, hook, tags, href, liveHref }) {
               {t}
             </span>
           ))}
+          {dates ? <span className="font-mono text-xs text-muted">{dates}</span> : null}
         </div>
       ) : null}
     </div>
