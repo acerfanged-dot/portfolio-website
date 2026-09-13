@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // Without this, Next builds og:image as a localhost URL and every social
-  // preview breaks. Update it if the deployment URL changes.
-  metadataBase: new URL("https://portfolio-website-dusky-gamma-96.vercel.app"),
+  // preview breaks. Read from lib/site so it can't drift from sitemap/robots.
+  metadataBase: new URL(SITE_URL),
   title: "Acer Carl Fanged",
   description:
     "I build the half of a web application you never see — databases, access rules, payments — and verify it actually works before it ships.",
