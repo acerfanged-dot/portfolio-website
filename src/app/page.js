@@ -9,8 +9,8 @@ export default function Home() {
       <Header />
       <main className="mx-auto max-w-4xl px-6 py-14">
         <p className="max-w-2xl text-xl font-medium leading-snug sm:text-2xl">
-          I find the real problem, direct AI to build the fix, and verify it works
-          before it ships.
+          I build the half of a web application you never see — databases, access rules,
+          payments — and verify it actually works before it ships.
         </p>
         <p className="mt-4 max-w-2xl text-sm text-muted">
           I don&apos;t write production code by hand — yet. An AI does the building; the

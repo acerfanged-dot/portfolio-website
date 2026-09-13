@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Acer Carl Fanged",
   description:
-    "I find the real problem, direct AI to build the fix, and verify it works before it ships.",
+    "I build the half of a web application you never see — databases, access rules, payments — and verify it actually works before it ships.",
 };
 
 export default function RootLayout({ children }) {
