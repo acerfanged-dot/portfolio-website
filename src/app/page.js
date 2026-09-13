@@ -76,27 +76,23 @@ export default function Home() {
           />
         </div>
 
-        <section className="mt-14 rounded-lg border border-line p-6">
-          <h2 className="text-lg font-semibold">Need this half of the app built?</h2>
-          <p className="mt-2 max-w-2xl text-base leading-relaxed">
-            Every project above is live, so the easiest way to judge the work is to open one.
-            If it looks like what you need, email me and I&apos;ll tell you plainly whether
-            it&apos;s something I can do — including when it isn&apos;t.
-          </p>
-          <div className="mt-4 flex flex-wrap items-center gap-3">
+        <section className="mt-14 border-t border-line pt-6">
+          <p className="max-w-2xl text-base leading-relaxed">
             <a
               href="mailto:acer.fanged@gmail.com"
-              className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+              className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
             >
               acer.fanged@gmail.com
-            </a>
+            </a>{" "}
+            — for work, or questions about any of the above. There&apos;s also a{" "}
             <Link
               href="/resume"
-              className="text-sm text-muted underline decoration-line underline-offset-2 hover:text-foreground"
+              className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
             >
-              Or read the résumé
+              résumé
             </Link>
-          </div>
+            .
+          </p>
         </section>
       </main>
       <Footer />

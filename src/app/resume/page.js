@@ -228,20 +228,6 @@ export default function Resume() {
           </p>
         </Section>
 
-        <section className="mt-12 rounded-lg border border-line p-6">
-          <h2 className="text-lg font-semibold">Hiring, or want the backend built?</h2>
-          <p className="mt-2 text-base leading-relaxed">
-            Easiest way to judge this is to look at something running. Every project above is
-            live, and the tools are public and runnable. If something fits what you need,
-            email me — I&apos;ll tell you plainly whether it&apos;s work I can do.
-          </p>
-          <a
-            href="mailto:acer.fanged@gmail.com"
-            className="mt-4 inline-block rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
-          >
-            acer.fanged@gmail.com
-          </a>
-        </section>
       </main>
       <Footer />
     </>
