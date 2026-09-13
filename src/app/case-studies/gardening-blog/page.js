@@ -81,13 +81,33 @@ export default function GardeningBlogCaseStudy() {
             Verified
           </h2>
           <p className="mt-3 text-base leading-relaxed">
-            Deployed and checked directly, not just assumed working from a clean build:
-            confirmed live, zero console errors on both the homepage and the one
-            published article, real content rendering correctly rather than a
-            placeholder. What hasn&apos;t happened yet, stated plainly rather than
-            implied: the site&apos;s own citation/verification-tier system hasn&apos;t
-            been stress-tested against a second or third article yet — one real article
-            isn&apos;t enough evidence that the structure holds up at scale.
+            The deployment checks pass — live, zero console errors, real content rendering
+            rather than a placeholder. But that verifies the <em>website</em>, and the thing
+            this project exists to test is whether the verification habit survives contact
+            with prose. So the honest report is about the tier system, not the build.
+          </p>
+          <p className="mt-4 text-base leading-relaxed">
+            <strong>It ran once, and it worked.</strong> The published article is tagged Tier 2
+            — general advice — and carries real cited sources in its data model rather than
+            a vague nod at research. Assigning that tier forced the question the whole site
+            is built around: what would it take to claim this is <em>safety-checked</em>
+            instead, and is that a claim I can actually stand behind for a plant that
+            someone might eat?
+          </p>
+          <p className="mt-4 text-base leading-relaxed">
+            <strong>And checking it turned up two real gaps.</strong> The tier system has no
+            written rubric anywhere — the labels live inline in the code, so &ldquo;Tier
+            2&rdquo; currently means whatever the person tagging it thought it meant. A tier
+            label without a standard behind it is decoration, not verification. Separately,
+            the type permits three tiers and the labelling function handles two: a Tier 3
+            article would throw at render time, on a value the code itself declares legal.
+            Neither of those was going to surface from a passing build.
+          </p>
+          <p className="mt-4 text-base leading-relaxed">
+            <strong>Not yet done:</strong> one article isn&apos;t evidence a structure holds
+            up. The rubric needs writing before a second article is tagged, because the point
+            of the tier is to constrain what gets claimed — and right now it constrains
+            nothing.
           </p>
         </section>
 
