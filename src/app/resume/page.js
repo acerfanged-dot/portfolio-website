@@ -207,23 +207,24 @@ export default function Resume() {
             technologies would claim something the summary above disclaims.
           </p>
           <p>
-            <strong>Independent, no AI assistance required:</strong> Git and GitHub workflows
-            including pull-request review; reading and reasoning about system architecture and
-            data flow; designing test cases and verification checklists; CI/CD pipeline use;
-            database migration replay-testing; structured pre-merge design review;
-            access-control review; Excel to an advanced level; SQL for analysis (DuckDB); data
-            validation and reconciliation.
+            <strong>Independent, no AI assistance required:</strong> Git and GitHub workflows;
+            reading and reasoning about system architecture and data flow; designing test cases
+            and verification checklists; running automated checks on every change before merge
+            and automatic deploys once they pass; structured pre-merge design review; Excel to
+            an advanced level; data validation and reconciliation.
           </p>
           <p>
-            <strong>AI-directed, personally verified:</strong> Postgres and Supabase, Row Level
-            Security policy design, database triggers, schema migrations, Next.js, React,
-            JavaScript, TypeScript, Tailwind, Vercel, Vitest. This means directing the build
+            <strong>AI-directed, personally verified:</strong> Postgres and Supabase, SQL, Row
+            Level Security policy design, database triggers, schema migrations, access-control
+            review, migration replay-testing, Next.js, React, JavaScript, TypeScript, Tailwind,
+            Vercel, Vitest. This means directing the build
             and verifying the result against the checks above — not authoring it from a blank
             file.
           </p>
           <p>
-            <strong>Currently learning:</strong> programming fundamentals, toward writing and
-            debugging this class of code independently rather than only verifying it.
+            <strong>Currently learning:</strong> programming fundamentals, and SQL beyond basic
+            queries — toward writing, querying and debugging this class of code independently
+            rather than only directing and verifying it.
           </p>
         </Section>
 
