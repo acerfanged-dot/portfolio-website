@@ -66,6 +66,29 @@ export default function Home() {
             liveHref="https://gardening-blog-porfolio.vercel.app/"
           />
         </div>
+
+        <section className="mt-14 rounded-lg border border-line p-6">
+          <h2 className="text-lg font-semibold">Need this half of the app built?</h2>
+          <p className="mt-2 max-w-2xl text-base leading-relaxed">
+            Every project above is live, so the easiest way to judge the work is to open one.
+            If it looks like what you need, email me and I&apos;ll tell you plainly whether
+            it&apos;s something I can do — including when it isn&apos;t.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <a
+              href="mailto:acer.fanged@gmail.com"
+              className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+            >
+              acer.fanged@gmail.com
+            </a>
+            <Link
+              href="/resume"
+              className="text-sm text-muted underline decoration-line underline-offset-2 hover:text-foreground"
+            >
+              Or read the résumé
+            </Link>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

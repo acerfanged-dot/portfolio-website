@@ -11,9 +11,9 @@ export default function Header() {
           <Link href="/how-i-work" className="hover:text-foreground">
             How I Work with AI
           </Link>
-          {/* Resume page: content is ready (see Job Application/Acer_Fanged_Master_Resume.md)
-              but not yet built as its own route -- no link until it exists, per the
-              blueprint's own stop point (landing + PEPPOOL + How I Work only, this round). */}
+          <Link href="/resume" className="hover:text-foreground">
+            Résumé
+          </Link>
         </nav>
       </div>
     </header>
