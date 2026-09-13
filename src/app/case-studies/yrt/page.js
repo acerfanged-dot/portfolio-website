@@ -120,6 +120,30 @@ export default function YrtCaseStudy() {
 
         <section className="mt-10">
           <h2 className="font-mono text-xs font-semibold uppercase tracking-wide text-muted">
+            Security
+          </h2>
+          <p className="mt-3 text-base leading-relaxed">
+            A permission bug fixed months earlier — a customer able to reassign their own
+            clinician, from a NULL-vs-false check that silently never restricted the one role it
+            needed to — came back live in production, silently reintroduced by an unrelated
+            migration eight days after the original fix, and sat unfixed for roughly six weeks.
+            It only resurfaced because a security review I&apos;d scoped for a different project
+            (PEPPOOL) got widened to include this one too. Fixed and confirmed against the live
+            database directly, then followed by a tool built specifically to catch this bug{" "}
+            <em>shape</em> automatically going forward.{" "}
+            <a
+              href="https://github.com/acerfanged-dot/portfolio-website/blob/master/docs/job-application-master-draft.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              Full write-up ↗
+            </a>
+          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="font-mono text-xs font-semibold uppercase tracking-wide text-muted">
             Result
           </h2>
           <p className="mt-3 text-base leading-relaxed">
