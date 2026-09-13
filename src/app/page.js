@@ -55,6 +55,7 @@ export default function Home() {
             title="Tios Bandidos"
             hook="A Fil-Tex-Mex cantina's ordering site, built in three days by reusing the working parts of YRT — the test of whether the approach carried to a second business."
             tags={["Next.js", "Supabase"]}
+            href="/case-studies/tios-bandidos"
             liveHref="https://www.tiosbandidos.com/"
           />
           <ProjectCard
