@@ -210,8 +210,10 @@ export default function Resume() {
             <strong>Independent, no AI assistance required:</strong> Git and GitHub workflows;
             reading and reasoning about system architecture and data flow; designing test cases
             and verification checklists; running automated checks on every change before merge
-            and automatic deploys once they pass; structured pre-merge design review; Excel to
-            an advanced level; data validation and reconciliation.
+            and automatic deploys once they pass; setting the standard a change must clear
+            before it is trusted live — migration replay-testing, behavioural coverage,
+            structured pre-merge review — and holding it; Excel to an advanced level; data
+            validation and reconciliation.
           </p>
           <p>
             <strong>AI-directed, personally verified:</strong> Postgres and Supabase, SQL, Row
