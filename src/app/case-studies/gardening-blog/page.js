@@ -88,26 +88,36 @@ export default function GardeningBlogCaseStudy() {
           </p>
           <p className="mt-4 text-base leading-relaxed">
             <strong>It ran once, and it worked.</strong> The published article is tagged Tier 2
-            — general advice — and carries real cited sources in its data model rather than
-            a vague nod at research. Assigning that tier forced the question the whole site
-            is built around: what would it take to claim this is <em>safety-checked</em>
-            instead, and is that a claim I can actually stand behind for a plant that
-            someone might eat?
+            — general advice — and cites four university extension sources, rendered to the
+            reader as links under a heading that dates the check rather than asserting it
+            timelessly. Re-run since: all four still resolve. Assigning that tier forced the
+            question the whole site is built around — what would it take to claim this is{" "}
+            <em>safety-checked</em> instead, and is that a claim I can stand behind for a
+            plant someone might eat?
           </p>
           <p className="mt-4 text-base leading-relaxed">
-            <strong>And checking it turned up two real gaps.</strong> The tier system has no
-            written rubric anywhere — the labels live inline in the code, so &ldquo;Tier
-            2&rdquo; currently means whatever the person tagging it thought it meant. A tier
-            label without a standard behind it is decoration, not verification. Separately,
-            the type permits three tiers and the labelling function handles two: a Tier 3
-            article would throw at render time, on a value the code itself declares legal.
-            Neither of those was going to surface from a passing build.
+            <strong>And checking it turned up two real gaps, both since fixed.</strong> The
+            tier system had no written rubric — the labels lived inline in the code, so
+            &ldquo;Tier 2&rdquo; meant whatever the person tagging it thought it meant, which
+            makes a tier label decoration rather than verification. And the type permitted
+            three tiers while the labelling function handled two: a Tier 3 article would have
+            thrown at render, on a value the code itself declared legal.
           </p>
           <p className="mt-4 text-base leading-relaxed">
-            <strong>Not yet done:</strong> one article isn&apos;t evidence a structure holds
-            up. The rubric needs writing before a second article is tagged, because the point
-            of the tier is to constrain what gets claimed — and right now it constrains
-            nothing.
+            Tracing where the tier came from explained the second one. It inherited a
+            three-level <em>shape</em> from a clinical study-quality scale — randomised trial,
+            cohort, case-control — while taking its actual <em>meaning</em> from a different
+            standard entirely, one that asks what happens if a reader acts on a claim and it
+            is wrong. That question has two answers, not three. The third tier was a fossil of
+            the wrong parent, which is exactly why nobody ever defined it. It is gone, and the
+            two that remain now have a written rubric that states what each requires — and how
+            it can be faked, since it is self-assigned and ungated.
+          </p>
+          <p className="mt-4 text-base leading-relaxed">
+            <strong>Not yet done:</strong> one article still isn&apos;t evidence a structure
+            holds up. The rubric was written after the fact, and a rubric only constrains
+            anything if the tier is assigned before the writing starts. The next article is
+            the first real test of that.
           </p>
         </section>
 
