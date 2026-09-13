@@ -123,16 +123,17 @@ export default function YrtCaseStudy() {
             Security
           </h2>
           <p className="mt-3 text-base leading-relaxed">
-            A permission bug fixed months earlier — a customer able to reassign their own
-            clinician, from a NULL-vs-false check that silently never restricted the one role it
-            needed to — came back live in production, silently reintroduced by an unrelated
-            migration eight days after the original fix, and sat unfixed for roughly six weeks.
-            It only resurfaced because a security review I&apos;d scoped for a different project
-            (PEPPOOL) got widened to include this one too. Fixed and confirmed against the live
-            database directly, then followed by a tool built specifically to catch this bug{" "}
-            <em>shape</em> automatically going forward.{" "}
+            A permission bug fixed months earlier came back — silently reintroduced by an
+            unrelated migration eight days after the original fix, then live for roughly six
+            weeks before anyone noticed. No customer was ever exposed: the platform hadn&apos;t
+            onboarded one yet. It only resurfaced because a security review I&apos;d scoped for a
+            different project got widened to include this one too. Fixed and confirmed against
+            the live database directly, then followed by a tool built specifically to catch this
+            bug <em>shape</em> automatically going forward. The interesting part isn&apos;t the
+            bug — it&apos;s that a documented fix with a written root cause was undone by an
+            unrelated change, and nothing mechanical noticed.{" "}
             <a
-              href="https://github.com/acerfanged-dot/portfolio-website/blob/master/docs/job-application-master-draft.md"
+              href="https://github.com/acerfanged-dot/portfolio-website/blob/master/docs/security-qa-writeups.md"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline"

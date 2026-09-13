@@ -105,15 +105,14 @@ export default function PeppoolCaseStudy() {
             Security
           </h2>
           <p className="mt-3 text-base leading-relaxed">
-            I directed an AI-run review of this database&apos;s access-control policies, which
-            found three real gaps: a suspension flag that wasn&apos;t actually enforced on four
-            write paths, a &ldquo;submit once&rdquo; rule with nothing in the database backing
-            it, and an undocumented assumption behind one table&apos;s write model. All three
-            fixed and verified live, not just read off the schema file. I then made the call to
-            run the same kind of review against an older project of mine, YRT — which is where
-            the more interesting finding turned up.{" "}
+            I scoped an AI-run review of this database&apos;s access-control policies, which
+            found three real gaps — rules the application assumed were being enforced that the
+            database wasn&apos;t actually enforcing. All three fixed and verified against the
+            live database, not just read off the schema file. I then made the call to run the
+            same kind of review against an older project of mine — which is where the more
+            interesting finding turned up.{" "}
             <a
-              href="https://github.com/acerfanged-dot/portfolio-website/blob/master/docs/job-application-master-draft.md"
+              href="https://github.com/acerfanged-dot/portfolio-website/blob/master/docs/security-qa-writeups.md"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline"
