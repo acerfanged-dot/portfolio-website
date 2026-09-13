@@ -12,45 +12,50 @@ parsing — this is not written in the narrative style of my other resume, on pu
 ## SUMMARY
 
 Self-taught, AI-directed developer with real, live production systems and one concrete,
-verified security finding to show for it — not a CTF or coursework background, a live bug
-found on a system I already owned and shipped, fixed and confirmed against the real database,
-then generalized into a reusable check. Comfortable in both modes this role asks for:
-adversarial review (finding what's actually wrong) and methodical QA (proving a test would
-have caught it before trusting it). Daily, structured user of Claude and GPT-class models —
-specify, build, verify, document — not a casual user claiming AI fluency without evidence.
+verified security finding to show for it — not a CTF or coursework background, a live bug on a
+system I already owned and shipped, which I directed the review that found, decided the fix
+for, and personally applied and confirmed against the real database myself. Comfortable in both
+modes this role asks for: directing an adversarial review (deciding scope, asking the question
+that corrects it) and methodical QA (requiring a test prove itself before I'll trust it). Daily,
+structured user of Claude and GPT-class models — specify, direct, verify, document — not a
+casual user claiming AI fluency without evidence.
 
 ## SECURITY & QA PROJECTS
 
-**Row-Level-Security Regression Finding & Detection Tool — Personal Projects (PEPPOOL, YRT)**
-| 2026
-- While reviewing a new project's Supabase/Postgres access-control policies, expanded the
-  review to an older, already-live project and found a previously-fixed permission bug had
-  been silently reintroduced by an unrelated later migration — live in production, allowing an
-  authenticated user to bypass a permission check that should have blocked them.
-- Confirmed the bug directly against the live database (not just the migration files), wrote
-  and applied a fix, then re-verified the corrected function was the one actually deployed.
-- Found and fixed a second, independent bug in the same review: a write-permission check on
-  one table wasn't inherited by a related table, allowing a state-based restriction to be
-  bypassed through a side door.
-- Built a static-analysis tool (Python + browser port) to catch this bug *shape* automatically
-  in future SQL changes, without needing live database credentials. The tool itself had real
-  precision bugs (11 false positives) on its first run against live code — found and fixed
-  before trusting its output.
-- Ran the finished tool as a full sweep across both projects' entire codebases (96 files
-  combined) and adopted it as a standing check before trusting any new schema change going
-  forward, not a one-time audit.
+*Attribution below is deliberately specific about what I did myself versus what an AI session
+did under my direction — the honest version needs to survive being asked about directly.*
 
-**Regression-Test Suite & Verification Methodology — Personal Project (YRT)** | 2026
+**Directed Security Review, Regression Fix & Detection Tool — Personal Projects (PEPPOOL, YRT)**
+| 2026
+- Directed an AI-run review of a database's Row-Level-Security policies (Supabase/Postgres) on
+  PEPPOOL, which found three real access-control gaps (a suspension flag not enforced on four
+  write paths; an unenforced "submit once" rule; an undocumented ownership assumption).
+- Made the call to extend the same kind of review to YRT, an older, already-live project; an AI
+  session ran that review under my direction and found a previously-fixed permission bug had
+  been silently reintroduced by an unrelated later migration — live in production.
+- Decided the fix and applied it against the live production database myself, since an AI
+  session cannot hold live production credentials — anything touching the real system runs
+  through me. Had the session re-verify the corrected function was the one actually deployed.
+- Same review surfaced a second, independent bug: a write-permission check on one table wasn't
+  inherited by a related table. Reviewed and approved the fix; applied and confirmed it live
+  myself, same as above.
+- Decided a static-analysis tool was worth building to catch this bug *shape* automatically in
+  future SQL changes; an AI session wrote it. Asked the scoping question ("does this only check
+  one type of bug?") that took it from one check to three. The tool had real precision bugs
+  (11 false positives) on its first run — found and fixed before I trusted its output.
+- Directed a full sweep of the finished tool across both projects' codebases (96 files combined)
+  and made it a standing check before trusting any new schema change going forward.
+
+**Regression-Test Suite Direction — Personal Project (YRT)** | 2026
 - Identified a codebase with CI (type-checking, lint, build) but zero behavioral tests — a
-  green pipeline that proved the code compiled, never that it did the right thing.
-- Added a test framework, prioritized coverage by risk (security boundaries and business logic
-  first, wiring/rendering code last), and wrote regression tests anchored to real, verified
-  output from the live feature rather than invented example data.
-- Proved the suite actually catches bugs, not just that it passes: deliberately reintroduced a
-  known-fixed bug, confirmed exactly the relevant test failed, then reverted.
-- Identified a real technical blocker to end-to-end testing (an auth layer with its own direct
-  database dependency my test stub couldn't reach) and made the deliberate call not to weaken
-  a real security check just to make a test technically possible.
+  green pipeline that proved the code compiled, never that it did the right thing. Directed an
+  AI session to add a test framework and write tests, prioritized by risk (security boundaries
+  and business logic first).
+- Required the suite to prove itself before I'd trust it: had a known-fixed bug deliberately
+  reintroduced, confirmed exactly the relevant test failed, then reverted.
+- Made the call not to weaken a real login/security check just to force an end-to-end test
+  through a technical blocker (an auth layer my test stub couldn't reach) — named the tradeoff
+  and kept the unit coverage already in hand instead.
 
 ## AI-DIRECTED DEVELOPMENT
 
@@ -66,7 +71,7 @@ specify, build, verify, document — not a casual user claiming AI fluency witho
 - Maintain a written, dated decision record for AI-directed work — what was built, what was
   verified and how, and what's still open — rather than trusting a task as "done" because an
   AI reported it so.
-- Built and use a small personal toolset of mechanical checks (documentation integrity,
+- Directed the build of a small personal toolset of mechanical checks (documentation integrity,
   version-consistency, the SQL security checks above) specifically because a documented rule
   and a single fix did not, on their own, prevent the same bug from recurring.
 
