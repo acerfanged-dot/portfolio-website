@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  // Without this, Next builds og:image as a localhost URL and every social
+  // preview breaks. Update it if the deployment URL changes.
+  metadataBase: new URL("https://portfolio-website-dusky-gamma-96.vercel.app"),
   title: "Acer Carl Fanged",
   description:
     "I build the half of a web application you never see — databases, access rules, payments — and verify it actually works before it ships.",

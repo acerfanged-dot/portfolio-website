@@ -12,28 +12,33 @@ export default function Home() {
           I build the half of a web application you never see — databases, access rules,
           payments — and verify it actually works before it ships.
         </p>
-        <p className="mt-4 max-w-2xl text-sm text-muted">
-          I don&apos;t write production code by hand — yet. An AI does the building; the
-          deciding, and checking it against the real system, are mine. Read{" "}
-          <Link
-            href="/how-i-work"
-            className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
-          >
-            how I actually work
-          </Link>{" "}
-          before assuming what that means — it&apos;s specific, not a hedge.
+        <p className="mt-4 max-w-2xl text-base">
+          Four live systems, three of them running real businesses, built over three months.
+          Every one is linked below — open them.
         </p>
         <p className="mt-2 max-w-2xl text-sm text-muted">
-          Or skip to the evidence:{" "}
+          The tools I check my own work with are public too:{" "}
           <a
             href="https://github.com/acerfanged-dot/verification-artifacts"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
           >
-            three tools, three domains
+            three of them, three domains
           </a>
           , each documenting the silent defect that checking it found.
+        </p>
+        <p className="mt-5 max-w-2xl border-l-2 border-line pl-4 text-sm text-muted">
+          One thing to be clear about up front: I don&apos;t write production code by hand —
+          yet. An AI does the building; the deciding, and checking it against the real system,
+          are mine.{" "}
+          <Link
+            href="/how-i-work"
+            className="text-foreground underline decoration-line underline-offset-2 hover:text-accent"
+          >
+            How I actually work
+          </Link>{" "}
+          is specific, and worth reading before you assume what that means.
         </p>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
