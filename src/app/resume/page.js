@@ -203,15 +203,27 @@ export default function Resume() {
 
         <Section title="Tools">
           <p>
-            <strong>Backend:</strong> Postgres, Supabase, Row Level Security policy design,
-            database triggers, schema migrations, SQL.{" "}
-            <strong>Application:</strong> Next.js, React, JavaScript, Tailwind, Vercel.{" "}
-            <strong>Verification:</strong> Vitest, regression testing, static pattern
-            checking, migration replay-testing, CI pipelines.{" "}
-            <strong>Data:</strong> Excel (advanced formulas, multi-stage pipelines),
-            DuckDB, Amazon Seller Central, Shopify.{" "}
-            <strong>AI:</strong> Claude and GPT-class models, daily and structured — specify,
-            direct, verify, document.
+            Split by what I can do alone versus what I direct, because a flat list of
+            technologies would claim something the summary above disclaims.
+          </p>
+          <p>
+            <strong>Independent, no AI assistance required:</strong> Git and GitHub workflows
+            including pull-request review; reading and reasoning about system architecture and
+            data flow; designing test cases and verification checklists; CI/CD pipeline use;
+            database migration replay-testing; structured pre-merge design review;
+            access-control review; Excel to an advanced level; SQL for analysis (DuckDB); data
+            validation and reconciliation.
+          </p>
+          <p>
+            <strong>AI-directed, personally verified:</strong> Postgres and Supabase, Row Level
+            Security policy design, database triggers, schema migrations, Next.js, React,
+            JavaScript, TypeScript, Tailwind, Vercel, Vitest. This means directing the build
+            and verifying the result against the checks above — not authoring it from a blank
+            file.
+          </p>
+          <p>
+            <strong>Currently learning:</strong> programming fundamentals, toward writing and
+            debugging this class of code independently rather than only verifying it.
           </p>
         </Section>
 
