@@ -72,7 +72,7 @@ export default function Home() {
             tags={["Next.js", "Static"]}
             href="/case-studies/gardening-blog"
             dates="Aug – Sep 2026"
-            liveHref="https://gardening-blog-porfolio.vercel.app/"
+            liveHref="https://windowsill-naturalist.vercel.app/"
           />
         </div>
 
