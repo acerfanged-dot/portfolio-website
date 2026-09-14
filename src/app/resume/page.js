@@ -75,7 +75,7 @@ export default function Resume() {
           </p>
           <p>
             Backend correctness is invisible, which is why the work is mostly checking. Every
-            defect I&apos;ve found across these systems failed silently — a permission check
+            defect found across these systems failed silently — a permission check
             that never fired, a form that overwrote instead of saving, a total computed from
             the wrong table. None of them errored.
           </p>
